@@ -22,15 +22,15 @@ var template=`
 
 function reactClock(props){
     let time=new Date().toLocaleTimeString("en-US",{timeZone:props});
-    var template=
+    return(
             <div class='card'>
                 <div class='card-header'><h6>{props}</h6></div>
                 <div class='card-body'>
                     <h4> {time} </h4>
                 </div>
-            </div>
-            
-        return template;
+            </div> 
+        )
+        
     }
 
 setInterval(() => {
