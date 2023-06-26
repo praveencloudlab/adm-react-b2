@@ -81,6 +81,20 @@ const App = () => {
     <h1>EVEN:: {even}</h1>
     <h1>ODD:: {odd}</h1>
      
+     <hr/>
+     <select>
+      <option>Benz</option>
+      <option>BMW</option>
+      <option>Hyundai</option>
+      <option>Honda</option>
+      <option>Maruthi</option>
+      <option>Kia</option>
+      <option>Tata</option>
+      <option>Toyota</option>
+      <option>MG</option>
+     </select>
+     <hr/>
+     <img src="" border="1"></img>
 
     </div>
   );
