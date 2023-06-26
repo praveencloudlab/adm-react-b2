@@ -1,4 +1,5 @@
-import React from 'react';
+
+import {useState} from 'react';
 
 const App = () => {
 
@@ -24,6 +25,18 @@ const App = () => {
        
       )
     })
+  }
+
+  
+    const[num,setNum]=useState(1)
+    const[even,setEven]=useState(0)
+    const[odd,setOdd]=useState(1)
+  //let num=1;
+
+  function test(){
+   // num=num+1;
+   setNum(num+1);
+    console.log(num);
   }
 
   return (
@@ -54,7 +67,19 @@ const App = () => {
       
       </table>
       
-      
+      <br/><br/>
+
+      <button onClick={test}>+</button>
+      <button onClick={()=>setNum(num-1)}>-</button> <br/> <br/>
+    <h1>Counter: {num}</h1> 
+
+    <hr/>
+    <button onClick={()=>setEven(even+2)}>Even</button>
+    <button onClick={()=>setOdd(odd+2)}>Odd</button>
+
+    <hr/>
+    <h1>EVEN:: {even}</h1>
+    <h1>ODD:: {odd}</h1>
      
 
     </div>
