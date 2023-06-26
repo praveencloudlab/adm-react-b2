@@ -16,7 +16,7 @@ const App = () => {
   function renderEmployees(){
     return employees.map(emp=>{
       return(
-        <tr>
+        <tr className='table-success'>
             <td>{emp.id}</td>
             <td>{emp.name}</td>
             <td>{emp.age}</td>
@@ -27,8 +27,8 @@ const App = () => {
   }
 
   return (
-    <div className='container'>
-      <h1>State Management</h1>
+    <div className='container mt-5' >
+      <h1 className='text-primary'>State Management</h1>
       <hr/>
 
       <ul>
@@ -36,12 +36,13 @@ const App = () => {
 
       </ul>
 
+
       <hr/>
 
-      <table className='table'>
+      <table className='table' >
         
           <thead>
-            <tr>
+            <tr className='bg-info'>
             <th>ID</th>
             <th>Name</th>
             <th>Age</th>
