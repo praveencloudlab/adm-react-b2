@@ -1,0 +1,8 @@
+Component comminications
+===========================
+communicating from parent component to child component : props
+commuinication from child to paramet : custom events
+comminicate from one component to any other compoents: context
+communicating from the same component : state
+
+
