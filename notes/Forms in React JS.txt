@@ -1,0 +1,10 @@
+Forms in React JS
+======================
+2 types
+=========
+1.controlled
+2.un-controlled
+
+url: https://www.react-hook-form.com/get-started/
+npm install react-hook-form 
+

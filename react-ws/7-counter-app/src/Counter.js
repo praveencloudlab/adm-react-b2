@@ -4,6 +4,7 @@ import Buttons from './Buttons';
 const Counter = () => {
     const btnLabels=[5,10,15,20,-20,-15,-10,-5,30];
     const[totalHitsCount,setTotalHitsCount] =useState(0);
+    const[resetCount,setResetCount] = useState(0);
 
     function calculateTotalHitsCount(data) {
        setTotalHitsCount(data+totalHitsCount)
@@ -13,10 +14,16 @@ const Counter = () => {
         return btnLabels.map((btnLabel,idx)=>{
             return(
                 <div  key={idx} className="col-4 mt-3">
-                <Buttons parentFun={calculateTotalHitsCount}  btnLabel={btnLabel}/>
+                <Buttons  resetCount={resetCount} parentFun={calculateTotalHitsCount}  btnLabel={btnLabel}/>
                 </div>
             )
         })
+     
+    }
+
+    function handleBtnReset(){
+        setResetCount(resetCount+1) // refresh components of parent
+        setTotalHitsCount(0);// parent total 
     }
     return (
         <div>
@@ -27,7 +34,7 @@ const Counter = () => {
             <div className='card-header'><h4>Counter APP</h4></div>
             <div className='card-body'>
             <div className='text-center'>
-            <button className='btn btn-primary' >Reset All</button>
+            <button onClick={handleBtnReset} className='btn btn-primary' >Reset All</button>
             </div>
            
                 <div className='row'>
