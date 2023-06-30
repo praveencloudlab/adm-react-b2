@@ -1,0 +1,42 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "price": 75000,
+      "description": "Dell"
+    },
+    {
+      "id": 2,
+      "name": "Mobile",
+      "price": 44000,
+      "description": "Samsung Mobile"
+    },
+    {
+      "id": 3,
+      "name": "Ipad",
+      "price": 92000,
+      "description": "Apple iPad"
+    },
+    {
+      "id": 4,
+      "name": "Mobile",
+      "price": 12000,
+      "description": "Iphone 14 Pro"
+    },
+    {
+      "id": 5,
+      "name": "Toy",
+      "price": 3500,
+      "description": "Monster truck"
+    },
+    {
+      "id": "6",
+      "name": "Play Station",
+      "price": "75000",
+      "description": "Play station 5 console"
+    }
+  ],
+  "users": [],
+  "orders": []
+}

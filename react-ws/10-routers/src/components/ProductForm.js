@@ -1,13 +1,23 @@
 import React from 'react';
 import {useForm} from 'react-hook-form'
-
+import axios from 'axios';
 const ProductForm = () => {
     const {register, handleSubmit,formState: { errors }} = useForm({mode:'onChange'});
-    const f1 = (data) => console.log(data);
+    const f1 = (data) =>{
+        axios.post('http://localhost:3000/products/',data)
+        .then(response=>console.log(response.data));
+    } ;
 
     return (
         <div>
          <form onSubmit={handleSubmit(f1)}  >
+        <div>
+        <input placeholder='product ID' {...register("id",{required:true,pattern: /^\d*\.?\d*$/i })} />
+            {errors.price?.type==='required' &&<p className='text-danger'>Product ID is required</p>}
+            {errors.price?.type==='pattern' &&<p className='text-danger'>ID must be number</p>}
+
+
+        </div>
         <div>
             <input placeholder='product Name' {...register("name",{required:true,minLength:3,pattern: /^[A-Za-z ]+$/i })} />
             {errors.name?.type==='required' &&<p className='text-danger'>Product name is required</p>}
