@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "name": "Laptop",
+      "name": "Laptop New",
       "price": 75000,
       "description": "Dell"
     },
@@ -14,9 +14,9 @@
     },
     {
       "id": 3,
-      "name": "Ipad",
-      "price": 92000,
-      "description": "Apple iPad"
+      "name": "Ipad Pro",
+      "price": "120000",
+      "description": "Apple iPad 12.9 inch"
     },
     {
       "id": 4,
@@ -26,15 +26,21 @@
     },
     {
       "id": 5,
-      "name": "Toy",
-      "price": 3500,
-      "description": "Monster truck"
+      "name": "Tiger Toy ",
+      "price": "4500",
+      "description": "Monster truck Tiger"
     },
     {
       "id": "6",
       "name": "Play Station",
       "price": "75000",
       "description": "Play station 5 console"
+    },
+    {
+      "id": "7",
+      "name": "New",
+      "price": "87",
+      "description": "New Desc"
     }
   ],
   "users": [],

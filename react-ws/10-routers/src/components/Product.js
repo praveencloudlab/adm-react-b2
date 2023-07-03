@@ -8,7 +8,7 @@ const Product = ({prod}) => {
             <td>{prod.name}</td>
             <td>{prod.price}</td>
             <td>{prod.description}</td>
-            <td>Edit</td>
+            <td><Link to={`/product-form/${prod.id}`}>Edit</Link></td>
             <td>Delete</td>
         </>
     );
